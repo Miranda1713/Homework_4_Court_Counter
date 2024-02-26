@@ -1,10 +1,14 @@
 package com.flagg.msu.homework4courtcounter
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.TextView
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.flagg.msu.homework4courtcounter.databinding.ActivityMainBinding
+
+private const val TAG = "MainActivity"
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,10 +16,14 @@ class MainActivity : AppCompatActivity() {
     var scoreTeamB = 0
     private lateinit var binding: ActivityMainBinding
 
+    private val counterViewModel: CounterViewModel by viewModels()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        Log.d(TAG, "Got a CounterViewModel: $counterViewModel")
     }
 
     /**
