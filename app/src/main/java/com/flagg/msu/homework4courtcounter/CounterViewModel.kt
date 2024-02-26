@@ -5,12 +5,12 @@ import androidx.lifecycle.ViewModel
 
 private const val TAG = "CounterViewModel"
 class CounterViewModel : ViewModel() {
-    init {
-        Log.d(TAG, "ViewModel instance created")
-    }
+    var scoreTeamA = 0
+    var scoreTeamB = 0
 
-    override fun onCleared() {
-        super.onCleared()
-        Log.d(TAG, "ViewModel instance about to be destroyed")
-    }
+    val currentScoreTeamA: Int
+        get() = scoreTeamA
+
+    val currentScoreTeamB: Int
+        get() = scoreTeamB
 }

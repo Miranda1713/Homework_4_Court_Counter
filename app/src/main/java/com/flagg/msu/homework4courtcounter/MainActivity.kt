@@ -30,7 +30,8 @@ class MainActivity : AppCompatActivity() {
      * Increase the score for Team A by 1 point.
      */
     fun addOneForTeamA(v: View?) {
-        scoreTeamA++
+        var scoreTeamA = counterViewModel.currentScoreTeamA
+        //scoreTeamA++
         displayForTeamA(scoreTeamA)
     }
 
@@ -38,7 +39,8 @@ class MainActivity : AppCompatActivity() {
      * Increase the score for Team A by 2 points.
      */
     fun addTwoForTeamA(v: View?) {
-        scoreTeamA += 2
+        var scoreTeamA = counterViewModel.currentScoreTeamA
+        //scoreTeamA += 2
         displayForTeamA(scoreTeamA)
     }
 
@@ -46,7 +48,8 @@ class MainActivity : AppCompatActivity() {
      * Increase the score for Team A by 3 points.
      */
     fun addThreeForTeamA(v: View?) {
-        scoreTeamA += 3
+        var scoreTeamA = counterViewModel.currentScoreTeamA
+        //scoreTeamA += 3
         displayForTeamA(scoreTeamA)
     }
 
@@ -54,7 +57,8 @@ class MainActivity : AppCompatActivity() {
      * Increase the score for Team B by 1 point.
      */
     fun addOneForTeamB(v: View?) {
-        scoreTeamB++
+        var scoreTeamB = counterViewModel.currentScoreTeamB
+        //scoreTeamB++
         displayForTeamB(scoreTeamB)
     }
 
@@ -62,7 +66,8 @@ class MainActivity : AppCompatActivity() {
      * Increase the score for Team B by 2 points.
      */
     fun addTwoForTeamB(v: View?) {
-        scoreTeamB += 2
+        var scoreTeamB = counterViewModel.currentScoreTeamB
+        //scoreTeamB += 2
         displayForTeamB(scoreTeamB)
     }
 
@@ -70,7 +75,8 @@ class MainActivity : AppCompatActivity() {
      * Increase the score for Team B by 3 points.
      */
     fun addThreeForTeamB(v: View?) {
-        scoreTeamB += 3
+        var scoreTeamB = counterViewModel.currentScoreTeamB
+        //scoreTeamB += 3
         displayForTeamB(scoreTeamB)
     }
 
