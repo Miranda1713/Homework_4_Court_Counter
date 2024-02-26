@@ -30,54 +30,54 @@ class MainActivity : AppCompatActivity() {
      * Increase the score for Team A by 1 point.
      */
     fun addOneForTeamA(v: View?) {
-        var scoreTeamA = counterViewModel.currentScoreTeamA
+        counterViewModel.incrementTeamAScore(1) //Chat GPT
         //scoreTeamA++
-        displayForTeamA(scoreTeamA)
+        displayForTeamA(counterViewModel.scoreTeamA) //Chat GPT
     }
 
     /**
      * Increase the score for Team A by 2 points.
      */
     fun addTwoForTeamA(v: View?) {
-        var scoreTeamA = counterViewModel.currentScoreTeamA
+        counterViewModel.incrementTeamAScore(2) //Chat GPT
         //scoreTeamA += 2
-        displayForTeamA(scoreTeamA)
+        displayForTeamA(counterViewModel.scoreTeamA) //Chat GPT
     }
 
     /**
      * Increase the score for Team A by 3 points.
      */
     fun addThreeForTeamA(v: View?) {
-        var scoreTeamA = counterViewModel.currentScoreTeamA
+        counterViewModel.incrementTeamAScore(3) //Chat GPT
         //scoreTeamA += 3
-        displayForTeamA(scoreTeamA)
+        displayForTeamA(counterViewModel.scoreTeamA) //Chat GPT
     }
 
     /**
      * Increase the score for Team B by 1 point.
      */
     fun addOneForTeamB(v: View?) {
-        var scoreTeamB = counterViewModel.currentScoreTeamB
+        counterViewModel.incrementTeamBScore(1) //Chat GPT
         //scoreTeamB++
-        displayForTeamB(scoreTeamB)
+        displayForTeamB(counterViewModel.scoreTeamB) //Chat GPT
     }
 
     /**
      * Increase the score for Team B by 2 points.
      */
     fun addTwoForTeamB(v: View?) {
-        var scoreTeamB = counterViewModel.currentScoreTeamB
+        counterViewModel.incrementTeamBScore(2) //Chat GPT
         //scoreTeamB += 2
-        displayForTeamB(scoreTeamB)
+        displayForTeamB(counterViewModel.scoreTeamB) //Chat GPT
     }
 
     /**
      * Increase the score for Team B by 3 points.
      */
     fun addThreeForTeamB(v: View?) {
-        var scoreTeamB = counterViewModel.currentScoreTeamB
+        counterViewModel.incrementTeamBScore(3) //Chat GPT
         //scoreTeamB += 3
-        displayForTeamB(scoreTeamB)
+        displayForTeamB(counterViewModel.scoreTeamB) //Chat GPT
     }
 
     /**

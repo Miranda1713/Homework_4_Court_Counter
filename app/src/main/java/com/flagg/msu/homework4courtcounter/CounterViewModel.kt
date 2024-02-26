@@ -8,9 +8,11 @@ class CounterViewModel : ViewModel() {
     var scoreTeamA = 0
     var scoreTeamB = 0
 
-    val currentScoreTeamA: Int
-        get() = scoreTeamA
+    fun incrementTeamAScore(points: Int) {
+        scoreTeamA += points
+    } //Chat GPT
 
-    val currentScoreTeamB: Int
-        get() = scoreTeamB
+    fun incrementTeamBScore(points: Int) {
+        scoreTeamB += points
+    } //Chat GPT
 }
